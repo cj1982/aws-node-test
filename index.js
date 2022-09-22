@@ -7,6 +7,8 @@ app.get('/' , (req, res) => {
     console.log('Here you go express');
 });
 
-app.listen(8000, () => {
+
+const port = process.env.port || 3000;
+app.listen(port, () => {
     console.log('App initiated')
 })
